@@ -1,0 +1,25 @@
+{
+  "name": "jobqueueapi",
+  "version": "1.0.0",
+  "description": "Create a job queue whose workers fetch data from a URL and store the results in a database.  The job queue should expose a REST API for adding jobs and checking their status / results.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "RESTful",
+    "API",
+    "Job",
+    "Queue"
+  ],
+  "author": "Mehdi Kazi",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongoose": "^4.9.6"
+  }
+}
