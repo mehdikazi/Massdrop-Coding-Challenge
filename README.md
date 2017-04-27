@@ -2,8 +2,8 @@
 Massdrop job queue coding challenge using javascript and a RESTful API.
 
 # Setup
-For the first time run `npm install` in the project root to install all the necessary dependencies.
-For testing download the chrome app Postman at https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en.
+For the first time, run `npm install` in the project root to install all the necessary dependencies.
+For testing, download the chrome app Postman at https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en.
 
 # Running the Application
 Step 1: Run `mongod` in root of the project.
@@ -53,3 +53,10 @@ There are four main feautres of this application.
     `{
       "message": "Job successfully deleted"
       }`
+      
+# Next Steps
+  -Make application runnable through command line using cURL. 
+  -Add more extensive error checking
+  -Usable even with malformed url
+    -Currently https://www.google.com/ will work but www.google.com will not
+  -Handle cases where source code is not instantly parsed (make use of IN-PROGRESS status)
