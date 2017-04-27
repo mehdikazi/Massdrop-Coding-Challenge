@@ -14,19 +14,19 @@ step 5: Set to "GET" and press "Send" and `[]` should be returned since database
 
 # Using the Application and REST API
 There are four main feautres of this application.<br />
--POST<br />
-  -Step 1: Have "Enter request URL" field set to `http://localhost:3000/jobs`.<br />
-  -Step 2: Change setting to "POST"<br />
-  -Step 3: Go to the "BODY" tab<br />
-  -Step 4: Check the x-www-form-urlencoded setting<br />
-  -Step 5: Make "New key" field equal `url` and the "value" field equal to desired website URL<br />
-  -Step 6: Click "Send" and the below console will return "Job ID: xxxxxxxxxxxxxxx"<br />
+- POST<br />
+  - Step 1: Have "Enter request URL" field set to `http://localhost:3000/jobs`.<br />
+  - Step 2: Change setting to "POST"<br />
+  - Step 3: Go to the "BODY" tab<br />
+  - Step 4: Check the x-www-form-urlencoded setting<br />
+  - Step 5: Make "New key" field equal `url` and the "value" field equal to desired website URL<br />
+  - Step 6: Click "Send" and the below console will return "Job ID: xxxxxxxxxxxxxxx"<br />
   
- -GET all<br />
+ -GET all<br /> 
   -Step 1: Change setting to "GET"<br />
   -Step 2: Change "Enter request url" field to `http://localhost:3000/jobs`<br />
   -Step 3: Click "Send" and the below console will return the job in the JSON fomrat <br />
-    ```javascript
+    ```
      {
       _id: JOB_ID,
       url: WEBSITE_URL,
@@ -40,7 +40,7 @@ There are four main feautres of this application.<br />
   -Step 1: Change setting to "GET"<br />
   -Step 2: Change "Enter request url" field to `http://localhost:3000/jobs/idNumber` where idNumber is the returned job ID when posted.<br />
   -Step 3: Click "Send" and the below console will return the job in the JSON fomrat <br />
-    ```javascript
+    ```
     {
       _id: JOB_ID,
       url: WEBSITE_URL,
@@ -54,7 +54,7 @@ There are four main feautres of this application.<br />
    -Step 1: Change setting to "DELETE"<br />
    -Step 2: Change "Enter request url" field to `http://localhost:3000/jobs/idNumber` where idNumber is the returned job ID when posted.<br />
    -Step 3: Click "Send" and the below console will return:<br />
-    ```javascript
+    ```
      {
       "message": "Job successfully deleted"
      }
