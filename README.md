@@ -4,9 +4,9 @@ Massdrop job queue coding challenge using javascript and a RESTful API.
 # Setup
 - This application uses Node.js version 7.x.x. You can download Node.js using `brew install node` if you have brew installed. 
 - This application uses Mongodb. You can download Mongodb using `brew install mongodb` if you have brew installed. 
-  - Unfortuantly Mongodb does not add in the /data/db folder necessary, so in your root directory run `sudo mkdir -p /data/db` to make the appropiate folder. (http://stackoverflow.com/questions/7948789/mongodb-mongod-complains-that-there-is-no-data-db-folder)
-  - We need to change the access of the folder by running `sudo chown -R `id -u` /data/db` (http://stackoverflow.com/questions/15229412/unable-to-create-open-lock-file-data-mongod-lock-errno13-permission-denied)
-- For the first time, run `npm install` in the project root to install all the necessary dependencies.<br />
+  - Unfortuantly Mongodb does not add in the /data/db folder necessary, run `sudo mkdir -p ~/data/db` to make the appropiate folder. (http://stackoverflow.com/questions/7948789/mongodb-mongod-complains-that-there-is-no-data-db-folder)
+  - We need to change the access of the folder by running ```sudo chown -R `id -u` ~/data/db``` (http://stackoverflow.com/questions/15229412/unable-to-create-open-lock-file-data-mongod-lock-errno13-permission-denied)
+- Run `npm install` in the project root to install all the necessary dependencies.<br />
 - For testing, download the chrome app Postman at https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en. <br />
 
 # Running the Application
