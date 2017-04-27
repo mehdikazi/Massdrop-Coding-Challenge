@@ -23,9 +23,9 @@ There are four main feautres of this application.<br />
   - Step 6: Click "Send" and the below console will return "Job ID: xxxxxxxxxxxxxxx"<br />
   
  - GET all<br />  
-  - Step 1: Change setting to "GET"<br />
-  - Step 2: Change "Enter request url" field to `http://localhost:3000/jobs`<br />
-  - Step 3: Click "Send" and the below console will return the job in the JSON fomrat <br />
+   - Step 1: Change setting to "GET"<br />
+   - Step 2: Change "Enter request url" field to `http://localhost:3000/jobs`<br />
+   - Step 3: Click "Send" and the below console will return the job in the JSON fomrat <br />
     ```
      {
       _id: JOB_ID,
@@ -37,9 +37,9 @@ There are four main feautres of this application.<br />
      where `PARSING_STATUS = IN-PROGRESS, FAILED, or COMPLETED`<br />
      
  - GET by ID<br />
-  - Step 1: Change setting to "GET"<br />
-  - Step 2: Change "Enter request url" field to `http://localhost:3000/jobs/idNumber` where idNumber is the returned job ID when posted.<br />
-  - Step 3: Click "Send" and the below console will return the job in the JSON fomrat <br />
+   - Step 1: Change setting to "GET"<br />
+   - Step 2: Change "Enter request url" field to `http://localhost:3000/jobs/idNumber` where idNumber is the returned job ID when posted.<br />
+   - Step 3: Click "Send" and the below console will return the job in the JSON fomrat <br />
     ```
     {
       _id: JOB_ID,
@@ -51,9 +51,9 @@ There are four main feautres of this application.<br />
      where `PARSING_STATUS = IN-PROGRESS, FAILED, or COMPLETED`<br />
      
   - DELETE by ID<br />
-   - Step 1: Change setting to "DELETE"<br />
-   - Step 2: Change "Enter request url" field to `http://localhost:3000/jobs/idNumber` where idNumber is the returned job ID when posted.<br />
-   - Step 3: Click "Send" and the below console will return:<br />
+    - Step 1: Change setting to "DELETE"<br />
+    - Step 2: Change "Enter request url" field to `http://localhost:3000/jobs/idNumber` where idNumber is the returned job ID when posted.<br />
+    - Step 3: Click "Send" and the below console will return:<br />
     ```
      {
       "message": "Job successfully deleted"
