@@ -22,10 +22,10 @@ There are four main feautres of this application.<br />
   - Step 5: Make "New key" field equal `url` and the "value" field equal to desired website URL<br />
   - Step 6: Click "Send" and the below console will return "Job ID: xxxxxxxxxxxxxxx"<br />
   
- -GET all<br /> 
-  -Step 1: Change setting to "GET"<br />
-  -Step 2: Change "Enter request url" field to `http://localhost:3000/jobs`<br />
-  -Step 3: Click "Send" and the below console will return the job in the JSON fomrat <br />
+ - GET all<br />  
+  - Step 1: Change setting to "GET"<br />
+  - Step 2: Change "Enter request url" field to `http://localhost:3000/jobs`<br />
+  - Step 3: Click "Send" and the below console will return the job in the JSON fomrat <br />
     ```
      {
       _id: JOB_ID,
@@ -36,10 +36,10 @@ There are four main feautres of this application.<br />
      ```
      where `PARSING_STATUS = IN-PROGRESS, FAILED, or COMPLETED`<br />
      
- -GET by ID<br />
-  -Step 1: Change setting to "GET"<br />
-  -Step 2: Change "Enter request url" field to `http://localhost:3000/jobs/idNumber` where idNumber is the returned job ID when posted.<br />
-  -Step 3: Click "Send" and the below console will return the job in the JSON fomrat <br />
+ - GET by ID<br />
+  - Step 1: Change setting to "GET"<br />
+  - Step 2: Change "Enter request url" field to `http://localhost:3000/jobs/idNumber` where idNumber is the returned job ID when posted.<br />
+  - Step 3: Click "Send" and the below console will return the job in the JSON fomrat <br />
     ```
     {
       _id: JOB_ID,
@@ -50,10 +50,10 @@ There are four main feautres of this application.<br />
      ```
      where `PARSING_STATUS = IN-PROGRESS, FAILED, or COMPLETED`<br />
      
-  -DELETE by ID<br />
-   -Step 1: Change setting to "DELETE"<br />
-   -Step 2: Change "Enter request url" field to `http://localhost:3000/jobs/idNumber` where idNumber is the returned job ID when posted.<br />
-   -Step 3: Click "Send" and the below console will return:<br />
+  - DELETE by ID<br />
+   - Step 1: Change setting to "DELETE"<br />
+   - Step 2: Change "Enter request url" field to `http://localhost:3000/jobs/idNumber` where idNumber is the returned job ID when posted.<br />
+   - Step 3: Click "Send" and the below console will return:<br />
     ```
      {
       "message": "Job successfully deleted"
@@ -61,8 +61,8 @@ There are four main feautres of this application.<br />
      ```
       
 # Next Steps
-  -Make application runnable through command line using cURL. <br />
-  -Add more extensive error checking<br />
-  -Usable even with malformed url<br />
-    -Currently https://www.google.com/ will work but www.google.com will not<br />
-  -Handle cases where source code is not instantly parsed (make use of IN-PROGRESS status)
+  - Make application runnable through command line using cURL. <br />
+  - Add more extensive error checking<br />
+  - Usable even with malformed url<br />
+    - Currently https://www.google.com/ will work but www.google.com will not<br />
+  - Handle cases where source code is not instantly parsed (make use of IN-PROGRESS status)
