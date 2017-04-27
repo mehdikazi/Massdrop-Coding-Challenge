@@ -26,33 +26,39 @@ There are four main feautres of this application.<br />
   -Step 1: Change setting to "GET"<br />
   -Step 2: Change "Enter request url" field to `http://localhost:3000/jobs`<br />
   -Step 3: Click "Send" and the below console will return the job in the JSON fomrat <br />
-    `{
+    ```javascript
+     {
       _id: JOB_ID,
       url: WEBSITE_URL,
       status: [PARSING_STATUS],
       source_code: SOURCE_CODE
-     }`
+     }
+     ```
      where `PARSING_STATUS = IN-PROGRESS, FAILED, or COMPLETED`<br />
      
  -GET by ID<br />
   -Step 1: Change setting to "GET"<br />
   -Step 2: Change "Enter request url" field to `http://localhost:3000/jobs/idNumber` where idNumber is the returned job ID when posted.<br />
   -Step 3: Click "Send" and the below console will return the job in the JSON fomrat <br />
-    `{
+    ```javascript
+    {
       _id: JOB_ID,
       url: WEBSITE_URL,
       status: [PARSING_STATUS],
       source_code: SOURCE_CODE
-     }`
+     }
+     ```
      where `PARSING_STATUS = IN-PROGRESS, FAILED, or COMPLETED`<br />
      
   -DELETE by ID<br />
    -Step 1: Change setting to "DELETE"<br />
    -Step 2: Change "Enter request url" field to `http://localhost:3000/jobs/idNumber` where idNumber is the returned job ID when posted.<br />
    -Step 3: Click "Send" and the below console will return:<br />
-    `{
+    ```javascript
+     {
       "message": "Job successfully deleted"
-      }`
+     }
+     ```
       
 # Next Steps
   -Make application runnable through command line using cURL. <br />
