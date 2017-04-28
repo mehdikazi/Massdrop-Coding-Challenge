@@ -11,13 +11,13 @@ Massdrop job queue coding challenge using javascript and a RESTful API.
 - For testing, download the chrome app Postman at https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en. <br />
 
 # Running the Application
-Step 1: Run `mongod` in root of the project.<br />
-Step 2: In a new terminal run `redis-server` in the root of the project. <br/>
-Step 3: In a new terminal run `npm run start` in the root of the project.<br />
+- Step 1: Run `mongod` in root of the project.<br />
+- Step 2: In a new terminal run `redis-server` in the root of the project. <br/>
+- Step 3: In a new terminal run `npm run start` in the root of the project.<br />
   - At this step an intial test of the queue will run. It will create 10 jobs using "https://www.google.com/" printing `Job ID: ID` to the console when queued and `Job ID: ID COMPLETED` when the job has finished. 
-Step 4: Open Postman<br />
-Step 5: Copy `http://localhost:3000/jobs` into "Enter request URL" field<br />
-step 6: Set to "GET" and press "Send" and a list of all the added jobs should be returned.<br />
+- Step 4: Open Postman<br />
+- Step 5: Copy `http://localhost:3000/jobs` into "Enter request URL" field<br />
+- Step 6: Set to "GET" and press "Send" and a list of all the added jobs should be returned.<br />
 
 # Using the Application and REST API
 There are four main feautres of this application.<br />
