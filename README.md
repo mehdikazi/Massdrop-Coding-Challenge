@@ -4,7 +4,7 @@ Massdrop job queue coding challenge using javascript and a RESTful API.
 # Setup
 - This application uses Node.js version 7.x.x. You can download Node.js using `brew install node` if you have brew installed. 
 - This application uses Mongodb. You can download Mongodb using `brew install mongodb` if you have brew installed. 
-  - Unfortunately Mongodb does not add in the necessary /data/db folder, run ```sudo mkdir -p ~/data/db``` to make the appropiate folder." (http://stackoverflow.com/questions/7948789/mongodb-mongod-complains-that-there-is-no-data-db-folder)
+  - Unfortunately Mongodb does not add in the necessary /data/db folder, run ```sudo mkdir -p ~/data/db``` to make the appropiate folder. (http://stackoverflow.com/questions/7948789/mongodb-mongod-complains-that-there-is-no-data-db-folder)
   - We need to change the access of the folder by running ```sudo chown -R `id -u` ~/data/db``` (http://stackoverflow.com/questions/15229412/unable-to-create-open-lock-file-data-mongod-lock-errno13-permission-denied)
 - This application uses a redis server. You can download redis using `brew install redis` if you have brew installed.
 - Run `npm install` in the root of the project to install all the necessary dependencies.<br />
@@ -17,7 +17,7 @@ Step 3: In a new terminal run `npm run start` in the root of the project.<br />
   - At this step an intial test of the queue will run. It will create 10 jobs using "https://www.google.com/" printing `Job ID: ID` to the console when queued and `Job ID: ID COMPLETED` when the job has finished. 
 Step 4: Open Postman<br />
 Step 5: Copy `http://localhost:3000/jobs` into "Enter request URL" field<br />
-step 6: Set to "GET" and press "Send" and `[]` should be returned since database is initially empty.<br />
+step 6: Set to "GET" and press "Send" and a list of all the added jobs should be returned.<br />
 
 # Using the Application and REST API
 There are four main feautres of this application.<br />
