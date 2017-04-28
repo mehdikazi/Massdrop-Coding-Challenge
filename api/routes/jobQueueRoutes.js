@@ -4,7 +4,8 @@ module.exports = function(app) {
 
 	app.route('/jobs')
 		.get(jobQueue.list_all_jobs)
-		.post(jobQueue.create_a_job);
+		.post(jobQueue.create_a_job)
+		.delete(jobQueue.delete_all);
 
 	app.route('/jobs/:jobId')
 		.get(jobQueue.read_a_job)

@@ -23,6 +23,7 @@
     "mongoose": "^4.9.6",
     "body-parser": "^1.17.1",
     "cheerio": "latest",
-    "request": "latest"
+    "request": "latest",
+    "kue": "~0.6.2"
   }
 }
